@@ -20,43 +20,43 @@
   </property>
   <property>
     <name>dfs.ha.namenodes.nameservice1</name>
-    <value>namenode68,namenode80</value>
+    <value>namenode42,namenode52</value>
   </property>
   <property>
-    <name>dfs.namenode.rpc-address.nameservice1.namenode68</name>
+    <name>dfs.namenode.rpc-address.nameservice1.namenode42</name>
     <value>hadoop001:8020</value>
   </property>
   <property>
-    <name>dfs.namenode.servicerpc-address.nameservice1.namenode68</name>
+    <name>dfs.namenode.servicerpc-address.nameservice1.namenode42</name>
     <value>hadoop001:8022</value>
   </property>
   <property>
-    <name>dfs.namenode.http-address.nameservice1.namenode68</name>
+    <name>dfs.namenode.http-address.nameservice1.namenode42</name>
     <value>hadoop001:50070</value>
   </property>
   <property>
-    <name>dfs.namenode.https-address.nameservice1.namenode68</name>
+    <name>dfs.namenode.https-address.nameservice1.namenode42</name>
     <value>hadoop001:50470</value>
   </property>
   <property>
-    <name>dfs.namenode.rpc-address.nameservice1.namenode80</name>
+    <name>dfs.namenode.rpc-address.nameservice1.namenode52</name>
     <value>hadoop003:8020</value>
   </property>
   <property>
-    <name>dfs.namenode.servicerpc-address.nameservice1.namenode80</name>
+    <name>dfs.namenode.servicerpc-address.nameservice1.namenode52</name>
     <value>hadoop003:8022</value>
   </property>
   <property>
-    <name>dfs.namenode.http-address.nameservice1.namenode80</name>
+    <name>dfs.namenode.http-address.nameservice1.namenode52</name>
     <value>hadoop003:50070</value>
   </property>
   <property>
-    <name>dfs.namenode.https-address.nameservice1.namenode80</name>
+    <name>dfs.namenode.https-address.nameservice1.namenode52</name>
     <value>hadoop003:50470</value>
   </property>
   <property>
     <name>dfs.replication</name>
-    <value>3</value>
+    <value>1</value>
   </property>
   <property>
     <name>dfs.blocksize</name>
@@ -64,7 +64,7 @@
   </property>
   <property>
     <name>dfs.client.use.datanode.hostname</name>
-    <value>false</value>
+    <value>true</value>
   </property>
   <property>
     <name>fs.permissions.umask-mode</name>

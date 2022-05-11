@@ -1,5 +1,6 @@
 package com.cxf.member.controller
 
+import com.cxf.member.service.EtlDataService
 import com.cxf.util.HiveUtil
 import org.apache.spark.SparkConf
 import org.apache.spark.sql.SparkSession
@@ -7,7 +8,7 @@ import org.apache.spark.sql.SparkSession
 object DwdMemberController {
   def main(args: Array[String]): Unit = {
     //1.设置用户名
-    System.setProperty("HADOOP_USER_NAME","cxf")
+    System.setProperty("HADOOP_USER_NAME","root")
     //2.定义spark参数sparkConf
     val sparkConf = new SparkConf().setAppName("dwd_member_import").setMaster("local[*]")
     //3.创建sparkSession：执行sparksql语句
@@ -25,6 +26,8 @@ object DwdMemberController {
     //(3)使用snappy压缩
     //HiveUtil.useSnappyCompression(sparkSession)
     //7.对ods层原始数据进行数据清洗存入dwd层表中
+    //(1)清洗用户注册数据
+    EtlDataService.etlMemberRegtypeLog(sc,sparkSession)
 
 
 

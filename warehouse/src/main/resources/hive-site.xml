@@ -184,7 +184,7 @@
   </property>
   <property>
     <name>hive.zookeeper.quorum</name>
-    <value>hadoop002,hadoop001,hadoop003</value>
+    <value>hadoop001,hadoop003,hadoop002</value>
   </property>
   <property>
     <name>hive.zookeeper.client.port</name>
